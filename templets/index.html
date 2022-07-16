@@ -1,0 +1,227 @@
+{% extends 'base.html' %}
+{% block homeactive %} active {% endblock homeactive %}
+{% block body  %}
+
+
+<h1 class="my-3 text-center"><b>welcome to my website guys I AM AMAN VYAS</b>
+ <b>the main event was held at NATIONAL INSTITUTE OF TECHNOLOGY,SURATHKAL,JAN 2020</b>
+<p>
+<t><b>this website is all about inter nit swimming compitition </b></t>
+</p><b>this is my blog</b></h1>
+
+<div class="container-fluid my-2 px-0 bgcolor=cyan"style='background-color:red'><div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-indicators">
+<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+</div>
+<div class="carousel-inner">
+<div class="carousel-item active">
+  <img src="http://getwallpapers.com/wallpaper/full/6/5/7/1412756-new-michael-phelps-wallpapers-2000x1439-download.jpg" class="d-block w-100" alt="...">
+</div>
+<div class="carousel-item">
+  <img src="http://getwallpapers.com/wallpaper/full/6/5/7/1412756-new-michael-phelps-wallpapers-2000x1439-download.jpg" class="d-block w-100" alt="...">
+</div>
+<div class="carousel-item">
+  <img src="http://wallsdesk.com/wp-content/uploads/2016/09/Michael-Phelps-Wallpapers.jpg" class="d-block w-100" alt="...">
+</div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div></div>
+
+
+<div class="container my-5">
+
+<h1 class="my-2 text-center my-5"><b>select the main events</b></h1>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+{%for i in stroke%}
+    <div class="col">
+
+
+      <div class="card shadow-sm">
+        <img src="http://getwallpapers.com/wallpaper/full/6/5/7/1412756-new-michael-phelps-wallpapers-2000x1439-download.jpg" class="d-block w-100" alt="...">
+
+        <div class="card-body">
+
+          <p class="card-text">{{i.name}} Butterfly is a beautiful stroke—when done properly Butterfly is to swimming what the Fosbury Flop is to track and field and the triple axel is to figure skating: </p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a class='btn btn-primary btn-lg' href='/blog' role='button'>go to blog</a>
+
+            </div>
+            <small class="text-muted">9 h</small>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+{% endfor %}
+
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://images.unsplash.com/photo-1625568223843-b2d083820411?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80" class="d-block w-100" alt="...">
+
+        <div class="card-body">
+          <p class="card-text">swimming advantages:While your muscles are getting a good workout, your cardiovascular system is, too. Swimming makes your heart and lungs strong. Swimming is so good for you that researchers share it may even reduce your risk of death.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+                <a class='btn btn-primary btn-lg' href='/blog' role='button'>go to blog</a>
+
+            </div>
+            <small class="text-muted">{{i.name}}</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://media.istockphoto.com/photos/female-breaststroke-competitive-sports-swimmer-racing-in-pool-picture-id108176452?s=612x612" class="d-block w-100" alt="...">
+
+        <div class="card-body">
+          <p class="card-text">various compititions by agegroups:Matching youth sports participants in order to make competition fair and safe is an important goal of sports federations. In competitive swimming, the most appropriate method for grouping children to assure fair competition has also been debated for decades with little progress being made.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+                <a class='btn btn-primary btn-lg' href='/blog' role='button'>go to blog</a>
+
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://images.unsplash.com/photo-1589038533062-3dfb94707640?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=736&q=80" class="d-block w-100" alt="...">
+
+        <div class="card-body">
+          <p class="card-text">stroke perfection: The physi
+             of swimming are simple enough. To move through the water, you must generate thrust. To do so, you can use dragging or lifting forces. Drag is created by, unsurprisingly, dragging back against the water and, in the process, pushing an object, like the swimmer’s body, forward.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+                <a class='btn btn-primary btn-lg' href='/blog' role='button'>go to blog</a>
+
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://images.unsplash.com/photo-1438029071396-1e831a7fa6d8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=992&q=80" class="d-block w-100" alt="...">
+
+        <div class="card-body">
+          <p class="card-text">butterfly:The leg action comes from the hips. The heels and soles of your feet should break the surface from underneath with your knees slightly bent on the upbeat.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+                <a class='btn btn-primary btn-lg' href='/blog' role='button'>go to blog</a>
+
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://images.unsplash.com/photo-1519209233471-a93512eebb72?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=907&q=80" class="d-block w-100" alt="...">
+
+        <div class="card-body">
+          <p class="card-text">backstroke : A proper backstroke starts with you keeping your head completely still and with your torso, legs, and arms rotating around this fixed position. Your head should be in line with your spine with your ears at the waterline.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+                <a class='btn btn-primary btn-lg' href='/blog' role='button'>go to blog</a>
+
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://images.unsplash.com/photo-1515651513386-89be725f1571?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=723&q=80" class="d-block w-100" alt="...">
+
+        <div class="card-body">
+          <p class="card-text">breaststroke : The breaststroke is swum with the body facing down. The arms perform semicircular movements, and the legs perform a frog kick. Breaststroke is, without a doubt, the most popular swimming stroke.In fact, for many people, it is the only stroke that they use regularly</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+                <a class='btn btn-primary btn-lg' href='/blog' role='button'>go to blog</a>
+
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+
+      <div class="card shadow-sm">
+        <img src="https://images.unsplash.com/photo-1622979857654-9363bb0a1243?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=323&q=80" class="d-block w-100" alt="...">
+
+        <div class="card-body">
+
+          <p class="card-text">freestyle : Technically, freestyle refers to a style of swimming in which the swimmer has the freedom to choose his or her own stroke (hence the name, freestyle ). The International Swimming Federation (FINA) doesn't restrict swimmers to using a particular stroke. </p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+                <a class='btn btn-primary btn-lg' href='/blog' role='button'>go to blog</a>
+
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://cdn.wallpapersafari.com/53/47/cZbugj.jpg" class="d-block w-100" alt="...">
+
+        <div class="card-body">
+          <p class="card-text">starting positions : While Caeleb Dressel was not in that race, he and Brad, and perhaps Ben Proud of the UK have arguably the best starts in the world today. Curiously, they each set themselves up differently on the block to position themselves for the take your mark command. Once that happens, they each take a very similar weight back position for the beep; what I call the cocked position. The backs are rounded and the heads are down. One difference is in what they do with their arms.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+                <a class='btn btn-primary btn-lg' href='/blog' role='button'>go to blog</a>
+
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+    <div class="col p-4 d-flex flex-column position-static">
+      <strong class="d-inline-block mb-2 text-success">contact info</strong>
+      <h3 class="mb-0">author/creator</h3>
+      <div class="mb-1 text-muted">Nov 11</div>
+      <p class="mb-auto">email address: amanvyas055@gmail.com , u19me188@med.svnit.ac.in</p>
+      <p class="mb-auto">LinkedIn: http://linkedin.com/in/aman-vyas-10b1871b4</p>
+      <a href="/styles" class="stretched-link">click here to see the interdatabase connections with their id common</a>
+    </div>
+
+  </div>
+
+
+
+{% endblock body  %}
+{% block title %}Swimmers Pool{% endblock title %}
+
+
+
+   
